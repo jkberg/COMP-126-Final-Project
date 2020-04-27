@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP 126: Final Project</title>
+    <link 
+    href="styles.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" 
+    rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN link to SlickNav CSS  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"> -->
+ 
+    <!-- Link to your custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+ 
+    <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+    <!-- CDN link to SlickNav jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $(".menu").slicknav({
+              prependTo: "#mobilemenu"
+          });
+      });
+    </script>
+
+</head>
+
+<body>
+    <div class= "container2">
+
+        <header>
+            <div class="left">
+                <i class="fas fa-car-side"></i><br>
+                <div class="head">Ling's Cars</div>
+            </div>
+
+            <!-- Add a empty nav element to your <body> 
+            element--right above the regular nav menu--
+            to serve as a placeholder for the slicknav version 
+            of your regular nav menu, as follows. 
+            You can name it anything you want. I've made mine
+            an ID and called it "mobilemenu". -->
+
+            <nav id="mobilemenu"></nav>
+    
+            <!-- code for the default nav menu goes here -->
+
+            <nav class="menu">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Cars</a></li>
+                <li><a href="#">Vans</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+
+        <div class="main2">
+            <div class = "title">About</div><br>
+        </div>
+
+        <div class = "icon">
+            <i class="far fa-id-card"></i><br>
+        </div>
+
+        <div class = "graf">
+
+            <div class = "text"> Hello! My name is Ling Valentine, and I run 
+                the UK's favorite car leasing company and website, Ling's Cars. At Ling's Cars, we offer affordable van and car leases to customers 
+                for personal and business purposes. Check out our one-of-a-kind deals, and start leasing today!</div>
+
+        </div>
+
+        <footer class = "footer2">
+            <div class = "credits">
+                <div class = "subtitle"> Ling's Cars </div>
+                <div class = "subtitle"> The UK's favorite car leasing website. </div>
+                <div class = "subtitle"> Website designed by Jordan Killenberg. </div>
+                <a href = "Design Spec.pdf" class = "subtitle"> Click for website design spec. </a>
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
